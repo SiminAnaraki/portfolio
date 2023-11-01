@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      height: 80vh;
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -19,11 +19,15 @@
     #hamburger-nav {
       display: flex;
     }
+    #profile {
+      height: 80vh;
+      margin-bottom: 6rem;
+      margin-top: -30px;
+    }
     #experience,
     .experience-details-container {
       margin-top: 2rem;
     }
-    #profile,
     .section-container {
       display: block;
     }
@@ -74,8 +78,13 @@
       height: 40vh;
     }
     #profile {
-      height: 83vh;
+      height: 88vh;
       margin-bottom: 0;
+      margin-top:-80px;
+    }
+    .about-pic {
+      margin-top:0;
+    
     }
     article {
       font-size: 1rem;
@@ -140,4 +149,7 @@
       text-align: center;
       font-size: 1rem;
     }
+    #profile {
+      height: 85vh;
   }
+}
