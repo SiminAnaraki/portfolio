@@ -46,7 +46,28 @@
       margin-top: 0;
     }
   }
-  
+  @media screen and (max-width: 1000px) {
+    .project-btn {
+      padding: .8rem !important;
+      width: 6.5rem !important;
+  }
+  .menu-links a {
+    font-size: 1.3rem;
+  }
+}
+  @media screen and (max-width: 800px) {
+  .proj-container {
+    flex-direction: column;
+  }
+  .menu-links {
+    right: -30px;
+  }
+  .menu-links a {
+    padding: 8px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  }
   @media screen and (max-width: 600px) {
     #contact,
     footer {
@@ -65,11 +86,12 @@
     }
     .about-containers,
     .contact-info-upper-container,
-    .btn-container {
+    .btn-container
+     {
       flex-wrap: wrap;
     }
     .contact-info-container {
-      margin: 0;
+      margin:.3rem
     }
     .contact-info-container p,
     .nav-links li a {
@@ -99,5 +121,23 @@
     }
     .text-container {
       text-align: justify;
+    }
+    .hamburger-icon span {
+      width: 85%;    
+    }
+    .menu-links a {
+      padding: 7px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .hamburger-icon span {
+      width: 75%;    
+    }
+    .menu-links a {
+      padding: 7px;
+      text-align: center;
+      font-size: 1rem;
     }
   }

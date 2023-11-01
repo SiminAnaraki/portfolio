@@ -14,7 +14,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+*,*::after,*::after{
+  box-sizing: border-box;
+}
 p {
   color: rgb(85, 85, 85);
 }
@@ -102,6 +104,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  background: transparent;
 }
 
 .menu-links a {
@@ -165,10 +168,14 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
   height: 80vh;
 }
-
+.prof-pic {
+  border-radius: 35%;
+  filter: grayscale(90%) contrast(100%);
+  z-index: -5;
+}
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -195,7 +202,7 @@ section {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -285,14 +292,48 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  -webkit-filter: grayscale(90%) contrast(100%);/* Safari 6.0 - 9.0 */
+  filter: grayscale(90%) contrast(100%);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+.photo {
+  position: relative;
+}
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+.glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+/* .photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+} */
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -317,7 +358,7 @@ section {
 .experience-sub-title {
     color: rgb(85,85,85);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 .experience-details-container {
@@ -327,19 +368,19 @@ section {
 }
 .article-container {
     display: flex;
-    text-align: inherit;
+    text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
 }
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    justify-content: flex-start;
+    gap:1rem;align-items: center;
 }
-article .icon {
+article i {
     cursor: default;
 }
 #projects {
@@ -350,8 +391,7 @@ article .icon {
     background: rgb(250,250,250);
 }
 .project-img {
-    border-radius: 2rem;
-    width:80%;
+    width:100%;
     height: 100%;
 }
 .project-title {
@@ -361,6 +401,97 @@ article .icon {
 .project-btn {
     color: #000;
     border-radius: rgb(163,163,163);
+    padding: 1rem !important;
+    width: 8rem !important;
+}
+figure.snip0016 {
+  color: #fff ;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  text-align: center;
+  border-radius: 1rem;
+}
+figure.snip0016 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0016 img {
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  border-radius: 1rem;
+  width:100%;
+  height: 100%;
+  object-fit:fill;
+}
+figure.snip0016 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+figure.snip0016 figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.8s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.snip0016 h1,
+figure.snip0016 p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s,-moz-transform 0.1s,-o-transform 0.1s,transform 1s;
+}
+figure.snip0016 h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0016:hover img {
+  opacity: 0.2;
+}
+figure.snip0016:hover figcaption h1 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+figure.snip0016:hover figcaption p {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  z-index: 50;
+  color: #fff !important;
+}
+figure.snip0016:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 #contact {
     display: flex;

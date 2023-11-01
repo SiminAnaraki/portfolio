@@ -6,6 +6,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/brands.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -37,14 +41,14 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/photo_2023-10-22_21-54-17.jpg " alt="Simin Anaraki profile pic" />
+            <img src="./assets/IMG_update.png" alt="Simin Anaraki profile pic" class="prof-pic" />
         </div>
         <div class="section__text">
             <p class="section__pic-container__p1">Hello, I'm</p>
             <h1 class="title">Simin Anaraki</h1>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV-G3.pdf')">Dowload CV
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Dowload CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
                 </button>
@@ -61,26 +65,28 @@
         <p class="section__text__p1">Get to Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/photo_2023-10-27_21-17-28.jpg" alt="Profile picture" class="about-pic"/>
+            <div class="section__pic-container photo">
+                <img src="./assets/IMG_6003 (3).PNG" alt="Profile picture" class="about-pic"/>
+                <div class="glow-wrap">
+                    <i class="glow"></i>
+                </div>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>Junior Frontend Developer – Coding Bootcamp <br/> Coding Front, 2023</p>
-                    </div>
-                    <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon"/>
                         <h3>Education</h3>
-                        <p>Science and Culture University – Tehran, Iran <br/> Bachelor of Computer technology, 2012</p>
+                        <p>Bachelor of Computer technology –  <br/>Science and Culture University , 2012</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Frontend Developer – Coding Bootcamp <br/> Coding Front, 2023</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I began my career in the hardware world, where I spent a good number of years. But, my heart was always in programming. So, one day, I decided to be bold and follow my passion.
-
-                        I'll admit, I was a bit nervous, wondering if it was too late to make the switch. But here I am, still learning and growing. In the tech field, there's always something new to discover!</p>
+                    <p>I began my career in the IT world, 
+                     where I spent quite a few years. But, my real love was always programming. So, one day, I decided to be daring and follow my heart. It turned out to be one of the best choices I ever made. Now, I get to do what I'm truly passionate about every day and I'm always excited to learn more. In the tech world, there's a never-ending adventure of new things to explore!</p>
                 </div>
             </div>
         </div>
@@ -88,59 +94,93 @@
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h2 class="title">SKills And Interests</h2>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <h3 class="experience-sub-title">Frontend Development Skills</h3>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-html5"></i>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>HTML</h3>                             
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-css3-alt"></i>
                             <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
+                                <h3>CSS</h3>                              
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-sass"></i>
                             <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
+                                <h3>SASS</h3>                            
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-square-js"></i>
                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
+                                <h3>JavaScript</h3>                             
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-react"></i>
                             <div>
-                                <h3>React</h3>
-                                <p>Intermediate</p>
+                                <h3>React</h3>                             
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-bootstrap"></i>
                             <div>
-                                <h3>BootStrap</h3>
-                                <p>Intermediate</p>
+                                <h3>BootStrap</h3>                 
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <i class="fa-brands fa-git"></i>
                             <div>
                                 <h3>Git</h3>
-                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Hobbies and Interests</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="fa-solid fa-film"></i>
+                            <div>
+                                <h3>Movies</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-headphones"></i>
+                            <div>
+                                <h3>music</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <h3>Coding</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-person-walking"></i>
+                            <div>
+                                <h3>Walking</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-hands"></i>
+                            <div>
+                                <h4>Wood Crafting</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-utensils"></i>                            <div>
+                                <h3>Cooking</h3>
                             </div>
                         </article>
                     </div>
@@ -153,26 +193,36 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
+            <div class="about-containers proj-container">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/p1.png" alt="Project 1" class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="button-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SiminAnaraki/mainProject'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SiminAnaraki/mainProject'">Live Demo</button>
+                    <figure class="snip0016">
+                        <img src="./assets/p1-1.png" alt="Project 1" class="project-img"/>
+                        <figcaption>
+                            <h1>Streamlab</h1>
+                            <p>Online Movie Streaming template</p>
+                        </figcaption>	
+                    </figure>
+                        <div class="button-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SiminAnaraki/Streamlab'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://streamlab.simin.uk'">Live Demo</button>
+                        </div>
+                        
                     </div>
                 </div>
                  <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/p2.png" alt="Project 2" class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="button-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SiminAnaraki/restaurant'">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SiminAnaraki/restaurant'">Live Demo</button>
-                </div>
+                    <div class="article-container">
+                        <figure class="snip0016">
+                            <img src="./assets/p2-1.png" alt="Project 1" class="project-img"/>
+                            <figcaption>
+                                <h1>Gericht</h1>
+                                <p>Restaurant Web Page</p>
+                            </figcaption>	
+                        </figure>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn " onclick="location.href='https://github.com/SiminAnaraki/restaurant'">Github</button>
+                        <button class="btn btn-color-2 project-btn " onclick="location.href='https://Gericht.simin.uk'">Live Demo</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,7 +239,7 @@
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="Linkdin icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/simin-anaraki-baa81a68/" >Linkdin</a></p>
+                <p><a href="https://www.linkedin.com/in/simin-anaraki-baa81a68/" >Linkedin</a></p>
             </div>
         </div>
     </section>
