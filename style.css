@@ -407,14 +407,6 @@ article i {
   text-align: center;
 }
 
-.project-img {
-    width:100%;
-    height: 100%;
-}
-.project-title {
-    margin: 1rem;
-    color:black;
-}
 .project-btn {
     color: #000;
     border-radius: rgb(163,163,163);
