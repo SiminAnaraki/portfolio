@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 80vh;
+      height: 65vh;
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -51,6 +51,9 @@
     }
   }
   @media screen and (max-width: 1000px) {
+    .proj-container  li {
+      width:47%; 
+    }
     .project-btn {
       padding: .8rem !important;
       width: 6.5rem !important;
@@ -60,9 +63,10 @@
   }
 }
   @media screen and (max-width: 800px) {
-  .proj-container {
-    flex-direction: column;
-  }
+    .proj-container  li {
+      width:48%; 
+    }
+ 
   .menu-links {
     right: -30px;
   }
@@ -71,8 +75,15 @@
     text-align: center;
     font-size: 1.3rem;
   }
+  .project-btn {
+    padding: .7rem !important;
+    width: 6rem !important;
+}
   }
   @media screen and (max-width: 600px) {
+    .proj-container  li {
+      width:100%; 
+    }
     #contact,
     footer {
       height: 40vh;
@@ -98,6 +109,10 @@
     .btn-container
      {
       flex-wrap: wrap;
+    }
+    .contact-info-upper-container {
+     justify-content: space-around;
+      margin: 2rem 0;
     }
     .contact-info-container {
       margin:.3rem
@@ -140,7 +155,7 @@
       font-size: 1.2rem;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 460px) {
     .hamburger-icon span {
       width: 75%;    
     }
@@ -150,6 +165,10 @@
       font-size: 1rem;
     }
     #profile {
-      height: 85vh;
+      height: 80vh;
   }
+  .contact-info-upper-container {
+    display: block;
+    text-align: left;
+   }
 }

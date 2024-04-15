@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
 }
-
+ul,li {
+  list-style: none;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -152,8 +154,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 15vh;
+  /* height: 96vh; */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -169,7 +171,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 6rem;
-  height: 80vh;
+  height: 70vh;
 }
 .prof-pic {
   border-radius: 35%;
@@ -288,6 +290,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .about-pic {
@@ -336,7 +339,7 @@ section {
 }
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex:1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -385,11 +388,25 @@ article i {
 }
 #projects {
     position: relative;
+    margin-top: 3rem;
 }
-.color-container {
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+.proj-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
+.proj-container  li {
+  width:32%;
+  margin:40px 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
 .project-img {
     width:100%;
     height: 100%;
@@ -497,7 +514,8 @@ figure.snip0016:hover figcaption::before {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    margin-top: 5rem;
+    /* height:70vh; */
 }
 .contact-info-upper-container {
     display: flex;
@@ -508,6 +526,7 @@ figure.snip0016:hover figcaption::before {
     background: #fff;
     margin: 2rem auto;
     padding: 0.5rem;
+    flex-wrap: nowrap;
 }
 .contact-info-container {
     display: flex;
