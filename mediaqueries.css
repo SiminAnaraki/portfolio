@@ -18,6 +18,8 @@
     }
     #hamburger-nav {
       display: flex;
+      justify-content: space-between;
+     margin:0 5%;
     }
     #profile {
       height: 80vh;
@@ -157,7 +159,7 @@
   }
   @media screen and (max-width: 460px) {
     .hamburger-icon span {
-      width: 75%;    
+      width: 90%;    
     }
     .menu-links a {
       padding: 7px;
@@ -165,7 +167,7 @@
       font-size: 1rem;
     }
     #profile {
-      height: 65vh;
+      height: 70vh;
   }
   .contact-info-upper-container {
     display: block;
